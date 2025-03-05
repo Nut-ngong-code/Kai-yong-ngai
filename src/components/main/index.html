@@ -5,13 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <head>
-      <h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        magni, aliquam adipisci, repellat vitae rerum debitis error, sint
-        temporibus delectus tempore amet cumque quia nemo quos soluta. Facilis,
-        possimus obcaecati.
-      </h1>
-    </head>
+    <section>
+      <div
+        class="bg-gray-100 flex items-center justify-center px-32 py-16 "
+      >
+        <div class="max-w-5x1 w-full">
+          <!-- รูปที่จะสไลด์ -->
+          <div
+            class="relative overflow-hidden rounded-lg shadow-xl"
+            id="slider-container"
+          >
+            <!-- รูปสไลด์ -->
+            <div
+              class="flex transition-transform duration-500 ease-in-out"
+              id="slider"
+            >
+              <!-- รูปที่ 1  -->
+              <div class="w-full flex-shrink-0 relative">
+                <img
+                  src="/src/img/Untitled-1.jpg"
+                  alt="ลำใย"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-50 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100"
+                >
+                  <div class="text-white text-center p-4">
+                    <h3 class="text-2x1 font-bold mb-2">
+                      ลำไยเพิ่ม..ลิ้นจี่ลดลง!
+                    </h3>
+                    <p class="mb-4">
+                      ชาวสวนหันมาปลูกลำใยกันมากขึ้นและด้วยสภาพอากาศทำให้ลิ้นจี่ออกผลได้น้อยกว่าปีที่แล้ว
+                    </p>
+                    <a
+                      href="#"
+                      class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full inline-block"
+                      >อ่านเพิ่มเติม <i class="fas fa-arrow-right ml-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- รูปที่ 2  -->
+              <div class="w-full flex-shrink-0 relative">
+                <img
+                  src="/src/img/มังคุด.jpg"
+                  alt="มังคุด"
+                  class="w-full h-96 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-black bg-opacity-50 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100"
+                >
+                  <div class="text-white text-center p-4">
+                    <h3 class="text-2x1 font-bold mb-2">
+                      มังคุดไทยทุบสถิติโลก
+                    </h3>
+                    <p class="mb-4 px-64">
+                      สถานการณ์ส่งออกมังคุดไทยว่า
+                      เป็นผลไม้ที่ไทยยังครองตำแหน่งผู้นำส่งออกอันดับ 1 ของโลก
+                      ซึ่งไทยส่งออกมากถึง 91% (รวมผลสดและแปรรูป)
+                      ขณะที่การบริโภคในประเทศมีเพียง 9% เท่านั้น
+                    </p>
+                    <a
+                      href="#"
+                      class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-full inline-block"
+                      >อ่านเพิ่มเติม <i class="fas fa-arrow-right ml-2"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ปุ่มกดเลื่อน -->
+            <button
+              class="absolute top-1/2 left-4 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-100 rounded-full p-2 text-gray-800"
+              id="prev-btn"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button
+              class="absolute top-1/2 right-4 -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-100 rounded-full p-2 text-gray-800"
+              id="next-btn"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- กำหนดหน้าที่ขึ้นก่อน -->
+            <div
+              class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2"
+              id="dots-container"
+            >
+              <button
+                class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 active"
+                data-index="0"
+              ></button>
+              <button
+                class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100"
+                data-index="1"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
