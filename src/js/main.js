@@ -17,7 +17,7 @@ async function loadComponent(url, targetid) {
       mobileMenu.classList.add("hidden");
     }
   });
-
+ 
   // Slider functionality
   const slider = document.getElementById('slider');
   if (slider) {
