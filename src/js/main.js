@@ -7,8 +7,8 @@ async function loadComponent(url, targetid) {
     console.error(`Error loading ${url}:`, error);
   }
   
-  const menuButton = document.querySelector('button[class*="md:hidden"]');
-  const mobileMenu = document.querySelector('div[class*="hidden md:hidden"]');
+  const menuButton = document.querySelector('button[class*="xl:hidden"]');
+  const mobileMenu = document.querySelector('div[class*="hidden xl:hidden"]');
   menuButton.addEventListener("click", () => {
     const isHidden = mobileMenu.classList.contains("hidden");
     if (isHidden) {
@@ -21,7 +21,7 @@ async function loadComponent(url, targetid) {
 
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent("components/navbar/index.html", "navbar");
-  // loadComponent('components/navbar/index.html','navbar');
-  // loadComponent('components/navbar/index.html','navbar');
+  loadComponent('components/main/index.html','main');
+  loadComponent('components/footer/index.html','footer');
 });
 
