@@ -61,7 +61,7 @@ async function loadComponent(url, targetid) {
 
     // Start auto sliding
     function startAutoSlide() {
-      autoSlideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+      autoSlideInterval = setInterval(nextSlide, 10000); // Change slide every 5 seconds
     }
 
     // Stop auto sliding
