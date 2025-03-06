@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <section>
-      <div
-        class="bg-gray-100 flex items-center justify-center px-32 py-16 "
-      >
+    <section class="bg-gray-100 px-32 py-16 mx-auto">
+      <div class="flex items-center justify-center my-12">
         <div class="max-w-5x1 w-full">
           <!-- รูปที่จะสไลด์ -->
           <div
@@ -17,7 +19,7 @@
           >
             <!-- รูปสไลด์ -->
             <div
-              class="flex transition-transform duration-500 ease-in-out"
+              class="flex transition-transform duration-500 ease-in-out font-['Kanit']"
               id="slider"
             >
               <!-- รูปที่ 1  -->
@@ -31,7 +33,7 @@
                   class="absolute inset-0 bg-black bg-opacity-50 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100"
                 >
                   <div class="text-white text-center p-4">
-                    <h3 class="text-2x1 font-bold mb-2">
+                    <h3 class="text-2x1 font-medium mb-2">
                       ลำไยเพิ่ม..ลิ้นจี่ลดลง!
                     </h3>
                     <p class="mb-4">
@@ -56,7 +58,7 @@
                   class="absolute inset-0 bg-black bg-opacity-50 hover:bg-opacity-50 transition-all duration-300 flex items-center justify-center opacity-0 hover:opacity-100"
                 >
                   <div class="text-white text-center p-4">
-                    <h3 class="text-2x1 font-bold mb-2">
+                    <h3 class="text-2x1 font-medium mb-2">
                       มังคุดไทยทุบสถิติโลก
                     </h3>
                     <p class="mb-4 px-64">
@@ -102,6 +104,180 @@
                 data-index="1"
               ></button>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-t-4 border-stone-500/50 rounded-3xl my-12"></div>
+      <div class="flex grid grid-flow-col grid-rows-3 gap-4">
+        <div class="col-span-2 bg-lime-500/40 rounded-3xl">
+          <div class="p-5 grid grid-rows-/ gap-4">
+            <h1
+              class="font-['Kanit'] text-green-900 text-4xl text-center font-semibold my-3 p-2"
+            >
+              ผลไม้ที่นิยมในฤดูกาลนี้
+            </h1>
+            <div class="border-t-4 border-stone-500/50 rounded-lg mx-36"></div>
+            <h1
+              class="font-['Kanit'] text-green-900 text-3xl text-center font-medium my-1"
+            >
+              ฤดูกาล :
+              <span
+                class="font-medium bg-gray-100 rounded-full p-2 text-2x1 text-lg"
+                >หนาว ❄️</span
+              >
+            </h1>
+
+            <div
+              class="grid grid-rows-2 bg-gray-100 p-2 text-lg mx-auto rounded-lg p-8 font-['Kanit']"
+            >
+              <div class="grid grid-cols-4 gap-4">
+                <div class="relative group">
+                  <img
+                    src="/src/img/AE272C607FE64E2D95205AC49213DABF.jpg"
+                    alt="ส้ม"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >ส้ม</span
+                    >
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="/src/img/dFQROr7oWzulq5Fa5ya4fxNlv5uf8JdsoObg3L0lIkrYikrE5MlMCsdEtJSP2b6yzjZ.jpg"
+                    alt="องุ่น"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >องุ่น</span
+                    >
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="/src/img/f2.jpg"
+                    alt="ฝรั่ง"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >ฝรั่ง</span
+                    >
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="/src/img/image-1718611493696.jpg"
+                    alt="ลำใย"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >ลำใย</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-4 gap-4 mt-2">
+                <div class="relative group">
+                  <img
+                    src="/src/img/ชมพู่.jpg"
+                    alt="ชมพู่"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >ชมพู่</span
+                    >
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="/src/img/images.jpg"
+                    alt="พุทรา"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >พุทรา</span
+                    >
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="/src/img/รูปมะปราง.jpg"
+                    alt="มะปราง"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >มะปราง</span
+                    >
+                  </div>
+                </div>
+                <div class="relative group">
+                  <img
+                    src="/src/img/มะตูม_อยแห้ง_bael_fruit.jpg"
+                    alt="มะตูม"
+                    class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
+                  />
+                  <div
+                    class="absolute aspect-square inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 group-hover:rounded-3xl transition duration-300 flex items-center justify-center rounded-lg"
+                  >
+                    <span
+                      class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
+                      >มะตูม</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-2 row-span-2 bg-orange-400">2</div>
+        <div class="row-span-3 bg-orange-600">
+          <div class="grid grid-cols-4 gap-4 m-8">
+            <img
+              src="/src/img/ชมพู่.jpg"
+              alt="ชมพู่"
+              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
+            />
+            <img
+              src="/src/img/images.jpg"
+              alt="พุทรา"
+              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
+            /><img
+              src="/src/img/รูปมะปราง.jpg"
+              alt="มะปราง"
+              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
+            /><img
+              src="/src/img/มะตูม_อยแห้ง_bael_fruit.jpg"
+              alt="มะตูม"
+              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
+            />
           </div>
         </div>
       </div>
