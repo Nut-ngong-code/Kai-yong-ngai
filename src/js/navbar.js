@@ -19,6 +19,19 @@ async function loadComponent(url, targetid) {
   });
 }
 
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector("nav");
+    if (window.scrollY > 50) {
+      navbar.classList.add("bg-orange-300");
+      navbar.classList.remove("bg-orange-300/70");
+    } else {
+      navbar.classList.add("bg-orange-300/70");
+      navbar.classList.remove("bg-orange-300");
+    }
+  });
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent("components/navbar/index.html", "navbar");
   // loadComponent('components/main/index.html','main');
