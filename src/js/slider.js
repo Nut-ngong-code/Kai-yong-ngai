@@ -6,7 +6,7 @@ async function loadComponent(url, targetid) {
   } catch (error) {
     console.error(`Error loading ${url}:`, error);
   }
-
+ 
   // Slider functionality
   const slider = document.getElementById("slider");
   if (slider) {
