@@ -30,8 +30,6 @@ async function loadComponent(url, targetid) {
     }
   });
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent("components/navbar/index.html", "navbar");
   // loadComponent('components/main/index.html','main');
