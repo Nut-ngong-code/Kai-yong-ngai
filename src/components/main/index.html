@@ -8,9 +8,9 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <section class="bg-gray-100 px-32 py-16 mx-auto">
-      <div class="flex items-center justify-center my-12">
+  <body class="bg-gray-100">
+    <section class="px-32 pb-16 mx-auto">
+      <div class="flex items-center justify-center my-32">
         <div class="max-w-5x1 w-full">
           <!-- รูปที่จะสไลด์ -->
           <div
@@ -26,7 +26,7 @@
               <div class="w-full flex-shrink-0 relative">
                 <img
                   src="/src/img/Untitled-1.jpg"
-                  alt="ลำใย"
+                  alt="ลำไย"
                   class="w-full h-96 object-cover"
                 />
                 <div
@@ -37,7 +37,7 @@
                       ลำไยเพิ่ม..ลิ้นจี่ลดลง!
                     </h3>
                     <p class="mb-4">
-                      ชาวสวนหันมาปลูกลำใยกันมากขึ้นและด้วยสภาพอากาศทำให้ลิ้นจี่ออกผลได้น้อยกว่าปีที่แล้ว
+                      ชาวสวนหันมาปลูกลำไยกันมากขึ้นและด้วยสภาพอากาศทำให้ลิ้นจี่ออกผลได้น้อยกว่าปีที่แล้ว
                     </p>
                     <a
                       href="#"
@@ -108,11 +108,11 @@
         </div>
       </div>
       <div class="border-t-4 border-stone-500/50 rounded-3xl my-12"></div>
-      <div class="flex grid grid-flow-col grid-rows-3 gap-4">
+      <div class="flex grid grid-flow-col grid-rows-2 gap-4">
         <div class="col-span-2 bg-lime-500/40 rounded-3xl">
-          <div class="p-5 grid grid-rows-/ gap-4">
+          <div class="p-5 grid gap-4">
             <h1
-              class="font-['Kanit'] text-green-900 text-4xl text-center font-semibold my-3 p-2"
+              class="font-['Kanit'] text-green-900 text-4xl text-center font-semibold mt-3 p-2"
             >
               ผลไม้ที่นิยมในฤดูกาลนี้
             </h1>
@@ -128,7 +128,7 @@
             </h1>
 
             <div
-              class="grid grid-rows-2 bg-gray-100 p-2 text-lg mx-auto rounded-lg p-8 font-['Kanit']"
+              class="grid grid-rows-2 bg-gray-100 p-2 text-lg mx-auto rounded-lg p-8 font-['Kanit'] drop-shadow-xl"
             >
               <div class="grid grid-cols-4 gap-4">
                 <div class="relative group">
@@ -179,7 +179,7 @@
                 <div class="relative group">
                   <img
                     src="/src/img/image-1718611493696.jpg"
-                    alt="ลำใย"
+                    alt="ลำไย"
                     class="rounded-lg w-full h-auto object-cover group-hover:rounded-3xl aspect-square"
                   />
                   <div
@@ -187,7 +187,7 @@
                   >
                     <span
                       class="text-white text-xl text-4xl font-bold opacity-0 group-hover:opacity-100 transition duration-300"
-                      >ลำใย</span
+                      >ลำไย</span
                     >
                   </div>
                 </div>
@@ -257,27 +257,250 @@
             </div>
           </div>
         </div>
-        <div class="col-span-2 row-span-2 bg-orange-400">2</div>
-        <div class="row-span-3 bg-orange-600">
-          <div class="grid grid-cols-4 gap-4 m-8">
-            <img
-              src="/src/img/ชมพู่.jpg"
-              alt="ชมพู่"
-              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
-            />
-            <img
-              src="/src/img/images.jpg"
-              alt="พุทรา"
-              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
-            /><img
-              src="/src/img/รูปมะปราง.jpg"
-              alt="มะปราง"
-              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
-            /><img
-              src="/src/img/มะตูม_อยแห้ง_bael_fruit.jpg"
-              alt="มะตูม"
-              class="rounded-lg w-full h-auto object-cover hover:rounded-3xl aspect-square"
-            />
+        <div
+          class="col-span-2 row-span-1 bg-lime-500/40 rounded-3xl w-full h-auto"
+        >
+          2
+        </div>
+        <div
+          class="font-['Kanit'] text-green-900 row-span-2 bg-lime-500/40 rounded-3xl p-5 w-full h-auto"
+        >
+          <h1
+            class="text-4xl text-center font-semibold my-3 mx-16 p-2 md:text-3xl"
+          >
+            ราคาผลไม้ช่วงนี้
+          </h1>
+          <div class="border-t-4 border-stone-500/50 rounded-lg mx-16"></div>
+          <div
+            class="flex items-center justify-center space-x-3 mt-4 text-2xl font-medium md:text-normal"
+          >
+            <h2 class="items-center justify-start mr-8">รายการ</h2>
+            <p>&nbsp;&nbsp;</p>
+            <h2>ราคา/บาท</h2>
+            <h2>หน่วย</h2>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              กล้วย
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">กล้วยหอม</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">40</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="ml-8">กล้วยไข่</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">35</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="ml-8">กล้วนน้ำหว้า</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">35</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              พุทรา
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">พุทราสามรส</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">15-50</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="ml-8">พุทรานมสด</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">15-20</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              ลำไย
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">ลำไยพวงทอง</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">60</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="ml-8">ลำไยอีดอ</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">48</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              ชมพู่
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">ชมพู่ทับทิมจันทร์</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">25-50</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              มะปราง
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">มะปรางหวาน</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">70-120</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              มะตูม
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">มะตูมแห้ง</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">70</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              องุ่น
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">องุ่นไร้เมล็ด</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">280</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              มะขาม
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">มะขามเทศ</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">100-200</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ชื่อรายการ -->
+          <div
+            class="bg-gray-100 rounded-lg h-auto w-full px-5 py-2 mx-auto my-2 font-normal drop-shadow-md hover:drop-shadow-xl"
+          >
+            <h3
+              class="flex items-center justify-start text-xl font-semibold mt-2"
+            >
+              มะละกอ
+            </h3>
+            <!-- ประเภทกล้วย -->
+            <div class="flex justify-between items-center my-2">
+              <div class="flex items-center">
+                <h3 class="font-normal ml-8">มะละกอฮอลแลนด์</h3>
+              </div>
+              <div class="flex items-center space-x-2 mr-8">
+                <h3 class="mr-8 ml-2 mx-auto">33-45</h3>
+                <h3>กิโลกรัม</h3>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-end items-center my-4">
+            <button
+              class="bg-lime-700/50 text-white rounded-full h-10 w-32 drop-shadow-md hover:bg-lime-700/20 hover:drop-shadow-xl"
+            >
+              เช็คราคาผลไม้
+            </button>
           </div>
         </div>
       </div>
