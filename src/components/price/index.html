@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="bg-gray-100 font-['Kanit']">
+      <div class="container mx-auto px-4 py-8 max-w-6x1 mt-16">
+        <div class="flex flex-row items-center justify-between mb-8 gap-16">
+          <div class="flex flex-col items-start justify-center">
+            <div class="flex items-center">
+              <h1 class="text-5xl font-bold text-green-900">เช็คราคาผลไม้</h1>
+              <div class="ml-4 flex flex-col">
+                <div class="flex items-center">
+                  <div
+                    class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-arrow-up text-gray-700"></i>
+                  </div>
+                  <span class="text-sm">ราคาสูงขึ้น</span>
+                </div>
+                <div class="flex items-center mt-1">
+                  <div
+                    class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-arrow-down text-red-700"></i>
+                  </div>
+                  <span class="text-sm">ราคาต่ำลง</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row items-end justify-center gap-4">
+            <div class="flex flex-row items-center bg-lime-500/40 rounded-3xl">
+              <h2 class="text-lg font-semibold text-green-950 mx-4">
+                ประจำวันที่
+              </h2>
+              <div
+                class="my-3 mr-4 bg-white rounded-full px-4 py-2 shadow- font-medium"
+              >
+                <span class="text-lg" id="current-data">15 มกราคม 2568</span>
+              </div>
+            </div>
+            <div class="flex flex-row items-center bg-lime-500/40 rounded-3xl">
+              <h2 class="text-lg font-semibold text-green-950 mx-4">
+                ค้นหาชื่อผลไม้
+              </h2>
+              <div class="relative grow mr-2">
+                <input
+                  type="text"
+                  class="w-full px-4 py-2 pr-10 my-3 mr-4 bg-white rounded-full shadow-md focus:outline-none"
+                  placeholder="ค้นหาชื่อผลไม้..."
+                />
+                <button
+                  class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-lime-500/40 rounded-3xl text-green-900 p-4">
+          <div class="grid grid-cols-3 gap-4">
+            <div
+              class="flex flex-row items-center justify-between ml-8 pt-6 pb-4"
+            >
+              <h2 class="text-3xl font-semibold ml-4">รายการ</h2>
+              <h2 class="text-3xl font-semibold mr-8">หน่วย</h2>
+            </div>
+          </div>
+          <div class="flex flex-row grid grid-cols-3 gap-4 px-8">
+            <!-- ชื่อรายการ -->
+            <div
+              class="bg-gray-100 rounded-lg h-auto w-full font-normal drop-shadow-md hover:drop-shadow-xl text-xl"
+            >
+              <div class="items-center bg-green-600/20 rounded-t-lg w-full">
+                <h3
+                  class="flex items-center justify-start text-2xl font-semibold p-4 ml-2"
+                >
+                  กล้วย
+                </h3>
+              </div>
+              <!-- ประเภทกล้วย -->
+              <div class="px-5 py-2 mx-auto mb-2">
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex items-center">
+                    <h3 class="font-normal ml-8">กล้วยหอม</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="ml-2 mx-auto">40</h3>
+                    <div
+                      class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-up text-gray-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">กล้วยไข่</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="ml-2 mx-auto">35</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">กล้วนน้ำหว้า</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="ml-2 mx-auto">35</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ชื่อรายการ -->
+            <div
+              class="bg-gray-100 rounded-lg h-auto w-full font-normal drop-shadow-md hover:drop-shadow-xl text-xl"
+            >
+              <div class="items-center bg-green-600/20 rounded-t-lg w-full">
+                <h3
+                  class="flex items-center justify-start text-2xl font-semibold p-4 ml-2"
+                >
+                  พุทรา
+                </h3>
+              </div>
+              <!-- ประเภทกล้วย -->
+              <div class="px-5 py-2 mx-auto mb-2">
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex items-center">
+                    <h3 class="font-normal ml-8">พุทราสามรส</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">15-20</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">พุทรานมสด</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">15-20</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ชื่อรายการ -->
+            <div
+              class="bg-gray-100 rounded-lg h-auto w-full font-normal drop-shadow-md hover:drop-shadow-xl text-xl"
+            >
+              <div class="items-center bg-green-600/20 rounded-t-lg w-full">
+                <h3
+                  class="flex items-center justify-start text-2xl font-semibold p-4 ml-2"
+                >
+                  ลำใย
+                </h3>
+              </div>
+              <!-- ประเภทกล้วย -->
+              <div class="px-5 py-2 mx-auto mb-2">
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex items-center">
+                    <h3 class="font-normal ml-8">ลำไยพวงทอง</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">60</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">ลำไยอีดอ</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">48</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ชื่อรายการ -->
+            <div
+              class="bg-gray-100 rounded-lg h-auto w-full font-normal drop-shadow-md hover:drop-shadow-xl text-xl"
+            >
+              <div class="items-center bg-green-600/20 rounded-t-lg w-full">
+                <h3
+                  class="flex items-center justify-start text-2xl font-semibold p-4 ml-2"
+                >
+                  ผลไม้ 1
+                </h3>
+              </div>
+              <!-- ประเภทกล้วย -->
+              <div class="px-5 py-2 mx-auto mb-2">
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex items-center">
+                    <h3 class="font-normal ml-8">ผลไม้ 1.1</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">ผลไม้ 1.2</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-up text-gray-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">ผลไม้ 1.3</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-up text-gray-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ชื่อรายการ -->
+            <div
+              class="bg-gray-100 rounded-lg h-auto w-full font-normal drop-shadow-md hover:drop-shadow-xl text-xl"
+            >
+              <div class="items-center bg-green-600/20 rounded-t-lg w-full">
+                <h3
+                  class="flex items-center justify-start text-2xl font-semibold p-4 ml-2"
+                >
+                  ผลไม้ 2
+                </h3>
+              </div>
+              <!-- ประเภทกล้วย -->
+              <div class="px-5 py-2 mx-auto mb-2">
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex items-center">
+                    <h3 class="font-normal ml-8">ผลไม้ 2.1</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-up text-gray-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">ผลไม้ 2.2</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">ผลไม้ 2.3</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-up text-gray-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ชื่อรายการ -->
+            <div
+              class="bg-gray-100 rounded-lg h-auto w-full font-normal drop-shadow-md hover:drop-shadow-xl text-xl"
+            >
+              <div class="items-center bg-green-600/20 rounded-t-lg w-full">
+                <h3
+                  class="flex items-center justify-start text-2xl font-semibold p-4 ml-2"
+                >
+                  ผลไม้ 3
+                </h3>
+              </div>
+              <!-- ประเภทกล้วย -->
+              <div class="px-5 py-2 mx-auto mb-2">
+                <div class="flex justify-between items-center mt-4">
+                  <div class="flex items-center">
+                    <h3 class="font-normal ml-8">ผลไม้ 3.1</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">ผลไม้ 3.2</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-red-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-down text-red-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center my-2">
+                  <div class="flex items-center">
+                    <h3 class="ml-8">ผลไม้ 3.3</h3>
+                  </div>
+                  <div class="flex items-center space-x-2 mr-8">
+                    <h3 class="mr-8 ml-2 mx-auto">xxx</h3>
+                    <div
+                      class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center mr-4"
+                    >
+                      <i class="fas fa-arrow-up text-gray-700"></i>
+                    </div>
+                    <h3>บาท/กิโลกรัม</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="/src/FAQ.html">
+        <div
+          id="help-icon"
+          class="fixed bottom-6 right-6 w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center shadow-lg cursor-pointer hover:bg-gray-300 transition-all z-50 mr-5"
+        >
+          <span class="text-2xl font-bold">?</span>
+        </div>
+      </a>
+    </section>
+  </body>
+</html>
