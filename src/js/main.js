@@ -103,9 +103,14 @@ window.addEventListener("scroll", function () {
   }
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
   loadComponent("components/navbar/index.html", "navbar");
   loadComponent("components/main/index.html", "main");
   loadComponent("components/footer/index.html", "footer");
   loadComponent("components/price/index.html", "price");
+  loadComponent("components/news/index.html", "news");
+  loadComponent("components/map/index.html", "map");
+  loadComponent("components/FAQ/index.html", "FAQ");
+  loadComponent("components/FAQ/add_Q.html", "add_Q");
 });
